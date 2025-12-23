@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_demo_byme/pages/counter_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,8 +13,13 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
+
+
+  //user interface
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return MaterialApp(
+      home: CounterPage(),
+    );
   }
 }
